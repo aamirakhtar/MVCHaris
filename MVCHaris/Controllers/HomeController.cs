@@ -8,7 +8,7 @@ namespace MVCHaris.Controllers
 {
     public class HomeController : Controller
     {
-        // GET: Home
+        //Default Action
         public ViewResult index()
         {
             return View();
