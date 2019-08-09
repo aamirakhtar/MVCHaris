@@ -20,11 +20,20 @@ namespace MVCHaris.Controllers
         //    return View("index");
         //}
 
-        //Context Objects
-        public ViewResult IndexSubmit(FormCollection fc)
+        //Context Objects Query String
+        //public ViewResult IndexSubmit()
+        //{
+        //    string name = Request["name"];
+        //    string pwd = Request["pwd"];
+
+        //    return View("index");
+        //}
+
+        //Context Objects Form Data
+        public ViewResult IndexSubmit()
         {
-            string name = fc["name"];
-            string pwd = fc["pwd"];
+            string name = Request.Form["name"];
+            string pwd = Request.Form["pwd"];
 
             return View("index");
         }
